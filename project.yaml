@@ -1,0 +1,28 @@
+name: "Real-time E-commerce Analytics"
+dates: {start: "2023-09", end: "2023-11"}
+role_tags: [Data Engineering, Streaming, Analytics, Python]
+stack:
+  - Kafka (KRaft)
+  - Spark Structured Streaming 3.5
+  - MongoDB
+  - Streamlit
+  - Docker Compose
+datasets:
+  - name: "Replay clickstream"
+    file: "data/events.csv.gz"
+  - name: "Live optional feed"
+    source: "Wikimedia RecentChange or Binance trades"
+streaming:
+  event_time_column: "event_ts"
+  watermark: "10 minutes"
+  windows: ["1m_tumbling", "5m_hopping"]
+  session_timeout: "30 minutes"
+benchmarks:
+  e2e_latency_p95_ms: "850"
+  throughput_eps: "2000"
+evidence:
+  dashboard_url: "http://localhost:8501"
+  reports: ["docs/reports/latency_report.md"]
+limits:
+  - "Single-broker Kafka; prod needs multi-broker and replication."
+  - "Replay data is synthetic; live feed demonstrates real bursts."

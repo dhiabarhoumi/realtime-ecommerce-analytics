@@ -1,0 +1,30 @@
+# Production requirements
+pyspark==3.5.0
+kafka-python==2.0.2
+pymongo==4.6.0
+streamlit==1.28.2
+fastapi==0.104.1
+uvicorn==0.24.0
+pydantic==2.5.0
+pandas==2.1.4
+numpy==1.24.4
+requests==2.31.0
+python-dotenv==1.0.0
+sseclient-py==1.8.0
+
+# Development and testing
+pytest==7.4.3
+pytest-cov==4.1.0
+black==23.11.0
+ruff==0.1.6
+isort==5.12.0
+pre-commit==3.5.0
+mypy==1.7.1
+testcontainers==3.7.1
+
+# Load testing
+k6==0.1.0
+
+# Documentation
+mkdocs==1.5.3
+mkdocs-material==9.4.8
