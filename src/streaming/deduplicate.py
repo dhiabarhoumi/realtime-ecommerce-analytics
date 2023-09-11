@@ -12,3 +12,6 @@ def setup_deduplication(df: DataFrame) -> DataFrame:
     deduped_df = df.dropDuplicates(["event_id"])
     
     return deduped_df
+
+# Updated: 2025-10-04 19:46:26
+# Added during commit replay
