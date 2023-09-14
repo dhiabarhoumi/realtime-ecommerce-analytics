@@ -44,3 +44,6 @@ def setup_mongo_sink(df: DataFrame, mongo_uri: str, mongo_db: str, mongo_collect
             client.close()
         except:
             pass
+
+# Updated: 2025-10-04 19:46:27
+# Added during commit replay
