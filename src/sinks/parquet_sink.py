@@ -25,3 +25,6 @@ def setup_parquet_sink(df: DataFrame, output_path: str):
     except Exception as e:
         print(f"❌ Parquet write error: {e}")
         raise
+
+# Updated: 2025-10-04 19:46:27
+# Added during commit replay
