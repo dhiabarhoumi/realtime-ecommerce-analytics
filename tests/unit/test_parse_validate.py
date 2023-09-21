@@ -107,3 +107,6 @@ def test_parse_malformed_json(spark):
     # Should not crash and return empty result
     parsed_df = setup_parsing(df)
     assert parsed_df.count() == 0
+
+# Updated: 2025-10-04 19:46:29
+# Added during commit replay
