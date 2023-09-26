@@ -38,3 +38,6 @@ clean:
 	rm -rf checkpoints/ data/curated/
 	find . -type d -name "__pycache__" -exec rm -rf {} +
 	find . -name "*.pyc" -delete
+
+# Updated: 2025-10-04 19:46:30
+# Added during commit replay
