@@ -151,3 +151,6 @@ Raw Events → Parse/Validate → Watermark → Deduplicate → Sessionize → W
 - **Security**: IAM roles, encryption at rest/transit
 - **Cost**: Reserved instances, auto-scaling policies
 - **Compliance**: Data residency, audit logging
+
+# Updated: 2025-10-04 19:46:31
+# Added during commit replay
