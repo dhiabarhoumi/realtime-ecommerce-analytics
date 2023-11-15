@@ -26,3 +26,6 @@ evidence:
 limits:
   - "Single-broker Kafka; prod needs multi-broker and replication."
   - "Replay data is synthetic; live feed demonstrates real bursts."
+
+# Updated: 2025-10-04 19:46:39
+# Added during commit replay
