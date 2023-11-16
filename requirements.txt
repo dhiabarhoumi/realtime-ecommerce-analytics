@@ -1,33 +1,33 @@
 # Production requirements
-pyspark==3.5.0
+pyspark==3.4.1
 kafka-python==2.0.2
-pymongo==4.6.0
-streamlit==1.28.2
-fastapi==0.104.1
-uvicorn==0.24.0
-pydantic==2.5.0
-pandas==2.1.4
-numpy==1.24.4
+pymongo==4.5.0
+streamlit==1.27.0
+fastapi==0.103.0
+uvicorn==0.23.2
+pydantic==2.4.0
+pandas==2.1.1
+numpy==1.24.3
 requests==2.31.0
 python-dotenv==1.0.0
 sseclient-py==1.8.0
 
 # Development and testing
-pytest==7.4.3
+pytest==7.4.2
 pytest-cov==4.1.0
-black==23.11.0
-ruff==0.1.6
+black==23.9.1
+ruff==0.0.290
 isort==5.12.0
-pre-commit==3.5.0
-mypy==1.7.1
-testcontainers==3.7.1
+pre-commit==3.4.0
+mypy==1.5.1
+testcontainers==3.7.0
 
 # Load testing
 k6==0.1.0
 
 # Documentation
-mkdocs==1.5.3
-mkdocs-material==9.4.8
+mkdocs==1.5.2
+mkdocs-material==9.4.2
 
 # Updated: 2025-10-04 19:46:35
 # Added during commit replay

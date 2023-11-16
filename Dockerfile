@@ -10,6 +10,3 @@ COPY . .
 EXPOSE 8501
 
 CMD ["streamlit", "run", "src/dashboard/app.py", "--server.address", "0.0.0.0"]
-
-# Updated: 2025-10-04 19:46:34
-# Added during commit replay
