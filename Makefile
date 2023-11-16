@@ -13,7 +13,7 @@ produce:
 	python src/producers/replay.py --file data/events.csv.gz --rate 500
 
 stream:
-	spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0,org.mongodb.spark:mongo-spark-connector_2.12:10.3.0 \
+	spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.4.1,org.mongodb.spark:mongo-spark-connector_2.12:10.2.0 \
 		src/streaming/stream_job.py --brokers localhost:9092 --mongo_uri mongodb://localhost:27017 \
 		--mongo_db analytics --mongo_col kpis_minute --checkpoint checkpoints/main/ --out_parquet data/curated/
 
